@@ -51,14 +51,20 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'captcha' => 'required|captcha',
+        ], [
+            'captcha.required' => 'Captcha Empty',
+            'captcha.captcha' => 'Invalid Captcha',
         ]);
+
+        //Validator 表单验证的 make() 方法第三个参数是自定义错误提示
     }
 
     /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return \App\Models\User
      */
     protected function create(array $data)
     {
