@@ -13,11 +13,11 @@
                             <hr>
                             <h4>Personal Info.</h4>
                             <p>
-                            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                {{ $user->introduction }}
                             </p>
                             <hr>
                         <h4><strong>注册于</strong></h4>
-                        <p>January 01 1901</p>
+                         <p>{{ $user->created_at->diffForHumans() }}</p>
                         </div>
                     </div>
                 </div>
