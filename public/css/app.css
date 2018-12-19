@@ -8333,9 +8333,15 @@ button.close {
   }
 }
 
+/* Universal */
+
 body {
   font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
 }
+
+/* End of Universal */
+
+/* Header */
 
 .navbar-static-top {
   border-color: #e7e7e7;
@@ -8347,7 +8353,9 @@ body {
   margin-top: 0px;
 }
 
-/* Sticky footer styles */
+/* End of Header */
+
+/* Footer */
 
 html {
   position: relative;
@@ -8355,7 +8363,6 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 
@@ -8363,7 +8370,6 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #000;
 }
@@ -8382,11 +8388,23 @@ body {
   color: inherit;
 }
 
-/* User register page */
+/* End of Footer */
+
+/* User Register Page */
 
 .register-page img.captcha {
   margin-bottom: 0px;
   margin-top: 10px;
   cursor: pointer;
 }
+
+/* End of User Reg Page */
+
+/* User Profile Page */
+
+.users-show-page .user-info .thumbnail {
+  margin-bottom: 0px;
+}
+
+/* End of User Profile Page */
 

@@ -8,9 +8,15 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+/* Universal */
+
 body {
     font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
 }
+
+/* End of Universal */
+
+/* Header */
 
 .navbar-static-top {
     border-color: #e7e7e7;
@@ -21,21 +27,27 @@ body {
     margin-top: 0px;
 }
 
-/* Sticky footer styles */
+/* End of Header */
+
+/* Footer */
+
+// To make sticky footer
 html {
     position: relative;
     min-height: 100% ;
 }
+
 body {
-    /* Margin bottom by footer height */
+// Margin bottom by footer height
     margin-bottom: 60px;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
-    width: 100% ;
-    /* Set the fixed height of the footer here */
+    width: 100%;
+
+// Set the fixed height of the footer
     height: 60px;
     background-color: #000;
 
@@ -54,7 +66,10 @@ body {
     }
 }
 
-/* User register page */
+/* End of Footer */
+
+/* User Register Page */
+
 .register-page {
     img.captcha {
         margin-bottom: 0px;
@@ -62,3 +77,17 @@ body {
         cursor: pointer;
     }
 }
+
+/* End of User Reg Page */
+
+/* User Profile Page */
+
+.users-show-page {
+    .user-info {
+        .thumbnail {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* End of User Profile Page */
