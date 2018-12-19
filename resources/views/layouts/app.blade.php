@@ -7,15 +7,21 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- 此标签是为了方便前端的 JS 脚本获取 CSRF 令牌 -->
 
-    <title>@yield('title', 'LaraBBS') - Laravel 进阶教程</title>
+    <title>@yield('title', 'LaraBBS') - Laravel BBS </title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- 此处是为了使用当前请求的协议 (HTTP or HTTPS) 为资源生成一个URL -->
+
 </head>
+
 
 <body>
     <div id="app" class="{{ route_class() }}-page">
+    <!-- 此方法是自定义的辅助方法， 需要在 helpers.php 文件中添加 -->
 
         @include('layouts._header')
 
