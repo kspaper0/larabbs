@@ -37,7 +37,11 @@
         {{-- 用户发布的内容 --}}
         <div class="panel panel-default">
             <div class="panel-body">
-                Nothing ..
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">His/Her Topic</a></li>
+                    <li><a href="#">His/Her Reply</a></li>
+                </ul>
+                @include('users._topics', ['topics' => $user->topics()->recent()->paginate(5)])
             </div>
         </div>
     </div>
