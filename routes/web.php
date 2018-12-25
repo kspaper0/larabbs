@@ -47,3 +47,4 @@ Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show
 
 /* Categories */
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
+Route::resource('replies', 'RepliesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);

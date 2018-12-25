@@ -125,6 +125,15 @@ body {
     .pagination {
         margin: 12px 0;
     }
+
+    .meta {
+        font-size: .9em;
+        color: #b3b3b3;
+    }
+
+    .reply-content {
+        margin: 6px 0;
+    }
 }
 
 /* End of User Profile Page */
@@ -181,3 +190,23 @@ body {
 }
 
 /*End of Topic Show Page */
+
+/* Topic Reply */
+
+.topic-reply {
+    hr {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    .meta {
+        font-size: .9em;
+        color: #b3b3b3;
+    }
+}
+
+/* End of Topic Rely */
