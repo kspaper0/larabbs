@@ -49,4 +49,7 @@ class Topic extends Model
     {
         return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
+
+    // array_merge() 的方法将当前对象的 id （对应{topic}） 和 slug （对应{slug?}） 组成了路由参数。
+    // array_merge() 就是将多个元素组成一个数组
 }

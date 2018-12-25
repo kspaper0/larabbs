@@ -26,6 +26,7 @@ class TopicsController extends Controller
     public function show(Request $request, Topic $topic)
     {
         // URL 矫正
+        // 当有 slug 并且当数据库中存的这篇帖子的 slug 不等于 请求的slug
         if ( ! empty($topic->slug) && $topic->slug != $request->slug) {
             return redirect($topic->link(), 301);
         }

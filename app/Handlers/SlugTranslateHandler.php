@@ -63,6 +63,7 @@ class SlugTranslateHandler
         if (isset($result['trans_result'][0]['dst'])) {
             return str_slug($result['trans_result'][0]['dst']);
             //str_slug()生成一个友好的slug从给定的字符串
+            //例如 汉字 ，返回的就是 han-zi
         } else {
             // 如果百度翻译没有结果，使用拼音作为后备计划。
             return $this->pinyin($text);

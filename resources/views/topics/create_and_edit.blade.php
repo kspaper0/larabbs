@@ -74,6 +74,7 @@
 
     <script>
     $(document).ready(function(){
+        Simditor.locale = 'en-US';
         var editor = new Simditor({
             textarea: $('#editor'),
             upload: {
