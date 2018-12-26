@@ -41,6 +41,15 @@
                         </a>
                     </li>
 
+                    <!-- Notifications -->
+                    <li>
+                        <a href="{{ route('notifications.index') }}" class="notifications-badge" style="margin-top: -2px;">
+                            <span class="badge badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'fade' }} " title="Notifications">
+                                {{ Auth::user()->notification_count }}
+                            </span>
+                        </a>
+                    </li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
