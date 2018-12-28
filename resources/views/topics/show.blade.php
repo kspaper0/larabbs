@@ -68,7 +68,7 @@
             <div class="panel-body">
                 @includeWhen(Auth::check(), 'topics._reply_box', ['topic' => $topic])
                 {{-- 把 $topic 变量传给前面的页面 --}}
-                @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+                @include('topics._reply_list', ['replies' => $topic->replies()->with('user', 'topic')->get()])
             </div>
         </div>
     </div>
