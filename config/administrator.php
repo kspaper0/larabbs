@@ -37,7 +37,7 @@ return array(
      *  ]
      */
     'menu' => [
-        '用户与权限' => [
+        'User Authorisation' => [
             'users',
         ],
     ],
