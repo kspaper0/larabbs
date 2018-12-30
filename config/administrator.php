@@ -39,6 +39,8 @@ return array(
     'menu' => [
         'User Authorisation' => [
             'users',
+            'roles',
+            'permissions',
         ],
     ],
 
