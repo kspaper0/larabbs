@@ -9,8 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- 此标签是为了方便前端的 JS 脚本获取 CSRF 令牌 -->
 
-    <title>@yield('title', 'LaraBBS') - Laravel BBS</title>
-    <meta name="description" content="@yield('description', 'LaraBBS')" />
+    <title>@yield('title', 'LaraBBS') - {{ setting('site_name', 'Laravel Foundamental') }}</title>
+    <meta name="description" content="@yield('description', setting('seo_description', 'LaraBBS developing test '))" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'LaraBBS,test'))" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
